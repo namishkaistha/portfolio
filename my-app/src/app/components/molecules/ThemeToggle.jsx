@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import SunIcon from '../atoms/SunIcon'
+import MoonIcon from '../atoms/MoonIcon'
 
 export default function ThemeToggle() {
   const [darkMode, setDarkMode] = useState(false)
@@ -22,8 +24,8 @@ export default function ThemeToggle() {
   }
 
   return (
-    <button onClick={toggleTheme} className="text-2xl mt-10">
-      {darkMode ? '🌙' : '☀️'}
+    <button onClick={toggleTheme} className="text-2xl">
+      {darkMode ? <MoonIcon/> : <SunIcon/>}
     </button>
   )
 }
