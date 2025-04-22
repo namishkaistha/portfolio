@@ -1,21 +1,30 @@
-import Image from "next/image";
-import HoverCard from "./components/molecules/HoverCard";
+'use client'
+
+import HoverCard from './components/molecules/HoverCard'
+import ThemeToggle from './components/molecules/ThemeToggle'
 
 export default function Home() {
   return (
-    //min-h-screen ensures div will stretch at least to fill the full screen vertically; flex during div into a flex container; flex-col means children are laid out top-to bottom
-    //items-center aligns items to center; justify-start aligns stacked items
+    <div className="dark:bg-black bg-white text-black dark:text-white min-h-screen flex flex-col items-center justify-start">
+      {/* Optional: Toggle button to switch themes (you'd define this logic in ThemeToggle component) */}
+      <div className="border rounded-lg p-4">
+        <ThemeToggle />
+      </div>
 
-    //mt-[15vh] keeps Hi, I'm namish 15 percent from the top
-    <div className="min-h-screen flex flex-col items-center justify-start">
       <h1 className="mt-[15vh] text-6xl font-medium">Hi, I&apos;m Namish</h1>
-      <b>
-        <h2 className="mt-[5vh] text-3xl font-medium">I tell stories</h2>
-      </b>
-      <div className="mt-16 flex gap-12">
+
+      <h2 className="mt-[5vh] text-3xl font-medium">I tell stories</h2>
+
+      <div className="mt-20 flex gap-12">
         <HoverCard href="/creative" title="Creative" />
-        <HoverCard href="/programming" title="Programming" />
+        <HoverCard href="/work" title="Work Experience" />
+        <HoverCard href="/programming" title="Projects" />
+      </div>
+
+      <div className="mt-40 flex gap-12">
+        <HoverCard href="/about" title="About Me" />
+        <HoverCard href="/talk" title="Talk to Me" />
       </div>
     </div>
-  );
+  )
 }
