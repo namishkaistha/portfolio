@@ -1,5 +1,14 @@
-// src/app/creative/about.js
+//  ── src/app/about/page.js
+import Profile from "../components/atoms/Profile";
+import ContactForm from "../components/organisms/ContactForm"
+import IntroCard from "../components/molecules/IntroCard"
+
 export default function AboutPage() {
-    return <h2 className="text-3xl p-8">About Me</h2>
-  }
-  
+  return (
+    <main className="min-h-screen bg-white dark:bg-black flex flex-col items-center gap-8 p-8">
+      <IntroCard/>
+      <ContactForm/>
+
+    </main>
+  );
+}

@@ -7,9 +7,6 @@ export default function Home() {
   return (
     <div className="dark:bg-black bg-white text-black dark:text-white min-h-screen flex flex-col items-center justify-start">
       {/* Optional: Toggle button to switch themes (you'd define this logic in ThemeToggle component) */}
-      <div className="border rounded-lg p-4">
-        <ThemeToggle />
-      </div>
 
       <h1 className="mt-[15vh] text-6xl font-medium">Hi, I&apos;m Namish</h1>
 
@@ -21,9 +18,8 @@ export default function Home() {
         <HoverCard href="/programming" title="Projects" />
       </div>
 
-      <div className="mt-40 flex gap-12">
+      <div className="mt-20 flex gap-12">
         <HoverCard href="/about" title="About Me" />
-        <HoverCard href="/talk" title="Talk to Me" />
       </div>
     </div>
   )
