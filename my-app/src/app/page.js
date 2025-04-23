@@ -14,7 +14,6 @@ export default function Home() {
 
       <div className="mt-20 flex gap-12">
         <HoverCard href="/creative" title="Creative" />
-        <HoverCard href="/work" title="Work Experience" />
         <HoverCard href="/programming" title="Projects" />
       </div>
 
