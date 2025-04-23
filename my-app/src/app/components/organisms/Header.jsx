@@ -13,7 +13,6 @@ export default function Header() {
       <nav className={`flex gap-6 ${pathname === '/' ? 'invisible' : ''}`}>
         <Link href="/">Home</Link>
         <Link href="/creative">Creative</Link>
-        <Link href="/work">Work Experience</Link>
         <Link href="/programming">Projects</Link>
         <Link href="/about">About</Link>
       </nav>
