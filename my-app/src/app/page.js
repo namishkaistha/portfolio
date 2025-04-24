@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import HoverCard from './components/molecules/HoverCard'
-import ThemeToggle from './components/molecules/ThemeToggle'
+import HoverCard from "./components/molecules/HoverCard";
+import ThemeToggle from "./components/atoms/ThemeToggle";
 
 export default function Home() {
   return (
@@ -21,5 +21,5 @@ export default function Home() {
         <HoverCard href="/about" title="About Me" />
       </div>
     </div>
-  )
+  );
 }
