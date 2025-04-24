@@ -1,7 +1,7 @@
-export default function Description({description}){
+export default function Tech({tech}){
     return (
         <div className="flex flex-col md:flex-row items-center max-w-4xl mx-auto gap-8">
-        {description}
-      </div>
+            {tech}
+        </div>
     )
 }

@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           {/* now you have a Header with nav + theme toggle up top */}
           <Header />
-
           {/* main app content */}
           <main className="min-h-screen">
             {children}

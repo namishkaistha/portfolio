@@ -14,7 +14,7 @@ export default function AboutPage() {
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
             I’m Namish, a Computer Science and Economics student passionate
             about empowering people and businesses to tell their stories. I do
-            this predominately through creating content and working on ideas
+            this by creating content and working on ideas
             that democratize technology for businesses. You can find my work
             on{" "}
             <a

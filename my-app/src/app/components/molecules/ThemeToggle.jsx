@@ -24,7 +24,7 @@ export default function ThemeToggle() {
   }
 
   return (
-    <button onClick={toggleTheme} className="text-2xl">
+    <button onClick={toggleTheme} className="text-2xl cursor-pointer">
       {darkMode ? <MoonIcon/> : <SunIcon/>}
     </button>
   )
