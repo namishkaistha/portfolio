@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // keep this if you still want @/* → src/*
+      "@/*": ["src/*"],
+
+      // add this so @/components/* → src/app/components/*
+      "@/components/*": ["src/app/components/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx",
+    "src/**/*"
+  ]
+}
