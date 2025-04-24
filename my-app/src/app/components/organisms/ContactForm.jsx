@@ -4,7 +4,7 @@ export default function ContactForm() {
     <form
       action="https://formspree.io/f/mgvkekoo"
       method="POST"
-      className="w-full max-w-2xl mx-auto p-6 bg-gray-300 dark:bg-gray-900 rounded-lg shadow"
+      className="w-full max-w-2xl mx-auto p-6 bg-gray-300 dark:bg-gray-700 rounded-lg shadow"
     >
       <h2 className="text-2xl font-bold mb-4 dark:text-white">Let's Chat</h2>
 
