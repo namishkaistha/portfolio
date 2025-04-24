@@ -1,16 +1,16 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import ThemeToggle from '../molecules/ThemeToggle'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import ThemeToggle from "../atoms/ThemeToggle";
 
 export default function Header() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <header className="w-full flex items-center justify-between px-6 py-4 bg-white dark:bg-black dark:text-white">
       {/* always render this element, but hide its contents on "/" */}
-      <nav className={`flex gap-6 ${pathname === '/' ? 'invisible' : ''}`}>
+      <nav className={`flex gap-6 ${pathname === "/" ? "invisible" : ""}`}>
         <Link href="/">Home</Link>
         <Link href="/creative">Creative</Link>
         <Link href="/programming">Projects</Link>
@@ -22,5 +22,5 @@ export default function Header() {
         <ThemeToggle />
       </div>
     </header>
-  )
+  );
 }
