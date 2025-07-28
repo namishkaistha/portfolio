@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -22,5 +23,9 @@
     "eslint-config-next": "15.3.1",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.4"
+=======
+  "dependencies": {
+    "react-icons": "^5.5.0"
+>>>>>>> namish-dev
   }
 }

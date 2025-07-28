@@ -26,6 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+<<<<<<< HEAD
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -47,6 +48,8 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
+=======
+>>>>>>> namish-dev
       {/* apply your Rock Salt font here */}
       <body className={`${rock.variable} ${roboto.variable}`}>
         {/* wrap everything in your ThemeProvider */}
