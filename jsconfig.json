@@ -9,5 +9,14 @@
       "@/components/*": ["src/app/components/*"]
     }
   },
+<<<<<<< HEAD
   "include": ["next-env.d.ts", "**/*.js", "**/*.jsx", "src/**/*"]
+=======
+  "include": [
+    "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx",
+    "src/**/*"
+  ]
+>>>>>>> namish-dev
 }
