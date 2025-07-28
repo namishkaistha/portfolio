@@ -14,7 +14,7 @@ export default function ProjectCard({
 }) {
   const CardContent = ({ isClickable = false }) => (
     <div
-      className={`p-6 bg-white dark:bg-gray-800 rounded-lg border w-full max-w-4xl mx-auto shadow-lg ${
+      className={`p-6 card-white dark:card-gray-800 rounded-lg border w-full max-w-4xl mx-auto shadow-lg ${
         isClickable
           ? "transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:border-gray-400 dark:hover:border-gray-500"
           : ""

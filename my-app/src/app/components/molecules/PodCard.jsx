@@ -20,10 +20,10 @@ export default function PodCard({ title, description, link }) {
       ${isFlipped ? "[transform:rotateY(180deg)]" : ""}
     `}
       >
-        <div className="absolute inset-0 bg-white dark:bg-gray-800 border-2 border-gray-600 dark:border-gray-600 rounded-lg flex items-center justify-center [backface-visibility:hidden]">
+        <div className="absolute inset-0 card-white dark:card-gray-800 border-2 border-gray-600 dark:border-gray-600 rounded-lg flex items-center justify-center [backface-visibility:hidden]">
           <span className="text-2xl font-semibold font-rock-salt">{title}</span>
         </div>
-        <div className="absolute inset-0 bg-gray-100 dark:bg-gray-700 border-2 border-gray-300 dark:border-gray-600 rounded-lg p-4 flex items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+        <div className="absolute inset-0 card-gray-100 dark:card-gray-700 border-2 border-gray-300 dark:border-gray-600 rounded-lg p-4 flex items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
           <p>{' "' + description + '" '}</p>
         </div>
       </div>
