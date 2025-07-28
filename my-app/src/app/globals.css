@@ -46,3 +46,20 @@ h6 {
 p {
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
 }
+
+/* Force solid backgrounds for cards */
+.card-front {
+  background-color: white !important;
+}
+
+.card-back {
+  background-color: #f3f4f6 !important;
+}
+
+.dark .card-front {
+  background-color: #1f2937 !important;
+}
+
+.dark .card-back {
+  background-color: #374151 !important;
+}
