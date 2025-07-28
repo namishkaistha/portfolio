@@ -55,3 +55,32 @@ h6 {
 p {
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
 }
+
+/* Force explicit colors for cards to ensure they render on Vercel */
+.card-white {
+  background-color: white !important;
+}
+
+.card-gray-100 {
+  background-color: #f3f4f6 !important;
+}
+
+.card-gray-300 {
+  background-color: #d1d5db !important;
+}
+
+.card-gray-700 {
+  background-color: #374151 !important;
+}
+
+.card-gray-800 {
+  background-color: #1f2937 !important;
+}
+
+.dark .card-gray-700 {
+  background-color: #374151 !important;
+}
+
+.dark .card-gray-800 {
+  background-color: #1f2937 !important;
+}
