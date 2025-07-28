@@ -24,11 +24,11 @@ export default function FilterBar({ onFilterChange }) {
 
   return (
     <div className="mb-8">
-      <div className="flex flex-row items-center justify-center gap-4">
-        <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
+        <h3 className="text-lg font-semibold text-gray-800 dark:text-white whitespace-nowrap">
           Filter By:
         </h3>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-2 sm:gap-4 justify-center">
           {filterCategories.map((category) => (
             <FilterButton
               key={category}
