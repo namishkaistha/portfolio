@@ -21,13 +21,13 @@ export default function CreativePage() {
                 >
                   Project Alchemy Podcast{" "}
                 </a>
-                was mine and Jack Considine's excuse to learn from Entrepreneurs
-                and Creatives that we wanted to emulate. Along the way, we
-                recorded over 200 episodes, and crystallized our mission: to
-                empower young people to pursue the "unconventional" path. Below,
-                click on some of our most interesting interviews to find my
-                favorite quotes and insights. Relevant podcast links are below
-                each card.
+                was mine and Jack Considine&apos;s excuse to learn from
+                Entrepreneurs and Creatives that we wanted to emulate. Along the
+                way, we recorded over 200 episodes, and crystallized our
+                mission: to empower young people to pursue the
+                &quot;unconventional&quot; path. Below, click on some of our
+                most interesting interviews to find my favorite quotes and
+                insights. Relevant podcast links are below each card.
               </p>
             </div>
           }
