@@ -2,16 +2,19 @@
 import IntroCard from "../components/molecules/IntroCard";
 import ProjectAlchemy from "../profile/Project_Alchemy.png";
 import PodCard from "../components/molecules/PodCard";
+
 export default function CreativePage() {
   return (
-    <main className="min-h-screen bg-background text-foreground dark:bg-foreground dark:text-background flex flex-col items-center gap-8 p-8">
-      <h2 className="text-3xl p-8 dark:text-white">Project Alchemy</h2>
+    <main className="min-h-screen bg-background text-foreground dark:bg-foreground dark:text-background flex flex-col items-center gap-6 sm:gap-8 p-4 sm:p-8">
+      <h2 className="text-2xl sm:text-3xl p-4 sm:p-8 dark:text-white">
+        Project Alchemy
+      </h2>
       <div>
         <IntroCard
           photo={ProjectAlchemy}
           description={
             <div className="text-center md:text-left">
-              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+              <p className="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                 The{" "}
                 <a
                   href="http://open.spotify.com/show/4JDEKnaNhWAL0ceZmZ7dsx?si=NLuzfMvCSdmBXYYxeD0PxQ"
@@ -32,7 +35,7 @@ export default function CreativePage() {
             </div>
           }
         />
-        <div className="mt-20 flex gap-12 dark:text-white">
+        <div className="mt-12 sm:mt-20 flex flex-col sm:flex-row gap-6 sm:gap-12 dark:text-white">
           <PodCard
             title="Sameer Gadhia (Young the Giant)"
             description="I know a ton of kids in their late 20s and early 30s who are trying to convince themselves that they love this job they HATE...and it's just paying the bills"

@@ -136,8 +136,8 @@ export default function ProgrammingPage() {
 
   return (
     //first, the card itself
-    <div className="min-h-screen flex flex-col items-center p-8 bg-background text-foreground dark:bg-foreground dark:text-background space-y-8">
-      <h2 className="flex flex-col items-center text-3xl p-8 dark:text-white">
+    <div className="min-h-screen flex flex-col items-center p-4 sm:p-8 bg-background text-foreground dark:bg-foreground dark:text-background space-y-6 sm:space-y-8">
+      <h2 className="flex flex-col items-center text-2xl sm:text-3xl p-4 sm:p-8 dark:text-white">
         My Projects
       </h2>
       <Description description="Projects I've worked on, along with notable achievements. When applicable, click on the project to see the code on GitHub." />
