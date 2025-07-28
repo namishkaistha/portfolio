@@ -4,7 +4,7 @@ import Description from "../components/atoms/Description";
 export default function ProgrammingPage() {
   return (
     //first, the card itself
-    <div className="min-h-screen flex flex-col items-center p-8 bg-background text-foreground dark:bg-foreground dark:text-background space-y-8">
+    <div className="min-h-screen flex flex-col items-center p-8 bg-background text-foreground space-y-8">
       <h2 className="flex flex-col items-center text-3xl p-8 dark:text-white">
         My Projects
       </h2>
@@ -84,7 +84,7 @@ export default function ProgrammingPage() {
         description="REST API app that provides personalized music recommendations"
         accomplishments={[
           "In a group of 3, engineered a backend REST API to provide music recommendations based on a user’s location and weather, with an integrated feature to check if similar artists are currently on tour",
-          "Designed the backend using AWS Lambda and a serverless architecture to ensure scalable performance and minimize infrastructure management"
+          "Designed the backend using AWS Lambda and a serverless architecture to ensure scalable performance and minimize infrastructure management",
         ]}
         category={["Backend"]}
       />

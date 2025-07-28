@@ -4,7 +4,7 @@ import ProjectAlchemy from "../profile/Project_Alchemy.png";
 import PodCard from "../components/molecules/PodCard";
 export default function CreativePage() {
   return (
-    <main className="min-h-screen bg-background text-foreground dark:bg-foreground dark:text-background flex flex-col items-center gap-8 p-8">
+    <main className="min-h-screen bg-background text-foreground flex flex-col items-center gap-8 p-8">
       <h2 className="text-3xl p-8 dark:text-white">Project Alchemy</h2>
       <div>
         <IntroCard
