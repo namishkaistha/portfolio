@@ -8,7 +8,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full flex items-center justify-between px-6 py-4 bg-white dark:bg-black dark:text-white">
+    <header className="w-full flex items-center justify-between px-6 py-4 bg-background text-foreground dark:bg-foreground dark:text-background font-rock-salt">
       {/* always render this element, but hide its contents on "/" */}
       <nav className={`flex gap-6 ${pathname === "/" ? "invisible" : ""}`}>
         <Link href="/">Home</Link>

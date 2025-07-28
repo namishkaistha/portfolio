@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import { FaSpotify } from "react-icons/fa";
 
 export default function PodCard({ title, description, link }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -20,21 +21,22 @@ export default function PodCard({ title, description, link }) {
     `}
       >
         <div className="absolute inset-0 bg-white dark:bg-gray-800 border-2 border-gray-600 dark:border-gray-600 rounded-lg flex items-center justify-center [backface-visibility:hidden]">
-          <span className="text-2xl font-semibold">{title}</span>
+          <span className="text-2xl font-semibold font-rock-salt">{title}</span>
         </div>
         <div className="absolute inset-0 bg-gray-100 dark:bg-gray-700 border-2 border-gray-300 dark:border-gray-600 rounded-lg p-4 flex items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-          <p className="text-gray-800 dark:text-gray-200">{description}</p>
+          <p>{' "' + description + '" '}</p>
         </div>
       </div>
 
-      <div className="vh-10">
+      <div className="vh-10 mt-2 mb-[200px] flex justify-center">
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200"
+          aria-label="Link to Spotify Interview"
+          className="text-green-500 hover:text-green-400 text-2xl"
         >
-          Link to Interview{" "}
+          <FaSpotify />
         </a>
       </div>
     </div>
