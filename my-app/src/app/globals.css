@@ -24,6 +24,13 @@ body {
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
 }
 
+/* Prevent CSS custom properties from affecting card backgrounds */
+.card-front,
+.card-back {
+  background: initial !important;
+  background-color: initial !important;
+}
+
 /* Font classes */
 .font-roboto {
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
@@ -50,16 +57,31 @@ p {
 /* Force solid backgrounds for cards */
 .card-front {
   background-color: white !important;
+  background: white !important;
 }
 
 .card-back {
   background-color: #f3f4f6 !important;
+  background: #f3f4f6 !important;
 }
 
 .dark .card-front {
   background-color: #1f2937 !important;
+  background: #1f2937 !important;
 }
 
 .dark .card-back {
   background-color: #374151 !important;
+  background: #374151 !important;
+}
+
+/* Override any CSS custom properties for specific elements */
+[style*="background-color: white"] {
+  background-color: white !important;
+  background: white !important;
+}
+
+[style*="background-color: #f3f4f6"] {
+  background-color: #f3f4f6 !important;
+  background: #f3f4f6 !important;
 }
