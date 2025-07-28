@@ -1,7 +1,7 @@
 // src/components/molecules/HoverCard.jsx
 
 //render on client side for hover effect
-"use client";
+// "use client";
 import Link from "next/link";
 
 //props --> where the link should go, and the title of the card
@@ -13,7 +13,7 @@ export default function HoverCard({ href, title }) {
     //inline-block --> makes element behave like an inline comment, but with padding
     // px-4, py-2: padding horizontal and vertically
     <Link href={href} className="group relative inline-block px-4 py-12">
-      <span className="relative z-10 text-2xl font-semibold">{title}</span>
+      <span className="relative z-10 text-2xl font-semibold font-rock-salt">{title}</span>
 
       <span
         className="
