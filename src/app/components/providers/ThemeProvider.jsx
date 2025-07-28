@@ -13,13 +13,6 @@ export default function ThemeProvider({ children }) {
 
   // Initialize theme from localStorage on mount
   useEffect(() => {
-<<<<<<< HEAD
-    const savedTheme =
-      localStorage.getItem(THEME.STORAGE_KEY) || THEME.MODES.LIGHT;
-    const isValidTheme = Object.values(THEME.MODES).includes(savedTheme);
-    const initialTheme = isValidTheme ? savedTheme : THEME.MODES.LIGHT;
-
-=======
     const getInitialTheme = () => {
       try {
         // Check localStorage first
@@ -46,7 +39,6 @@ export default function ThemeProvider({ children }) {
     };
 
     const initialTheme = getInitialTheme();
->>>>>>> namish-dev
     setTheme(initialTheme);
     applyThemeToDOM(initialTheme);
     setIsInitialized(true);
@@ -54,14 +46,10 @@ export default function ThemeProvider({ children }) {
 
   // Apply theme to DOM (centralized DOM manipulation)
   const applyThemeToDOM = (newTheme) => {
-<<<<<<< HEAD
-    const root = document.documentElement;
-=======
     if (typeof document === "undefined") return;
 
     const root = document.documentElement;
 
->>>>>>> namish-dev
     if (newTheme === THEME.MODES.DARK) {
       root.classList.add(THEME.CSS_CLASS);
     } else {
@@ -74,15 +62,11 @@ export default function ThemeProvider({ children }) {
     const newTheme =
       theme === THEME.MODES.DARK ? THEME.MODES.LIGHT : THEME.MODES.DARK;
     setTheme(newTheme);
-<<<<<<< HEAD
-    localStorage.setItem(THEME.STORAGE_KEY, newTheme);
-=======
     try {
       localStorage.setItem(THEME.STORAGE_KEY, newTheme);
     } catch (e) {
       console.warn("Error saving theme to localStorage:", e);
     }
->>>>>>> namish-dev
     applyThemeToDOM(newTheme);
   };
 
@@ -93,15 +77,11 @@ export default function ThemeProvider({ children }) {
       return;
     }
     setTheme(newTheme);
-<<<<<<< HEAD
-    localStorage.setItem(THEME.STORAGE_KEY, newTheme);
-=======
     try {
       localStorage.setItem(THEME.STORAGE_KEY, newTheme);
     } catch (e) {
       console.warn("Error saving theme to localStorage:", e);
     }
->>>>>>> namish-dev
     applyThemeToDOM(newTheme);
   };
 
