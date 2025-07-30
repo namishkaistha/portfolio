@@ -13,41 +13,23 @@ export default function ThemeProvider({ children }) {
 
   // Initialize theme from localStorage on mount
   useEffect(() => {
-    const initializeTheme = () => {
-      try {
-        const savedTheme =
-          localStorage.getItem(THEME.STORAGE_KEY) || THEME.MODES.LIGHT;
-        const isValidTheme = Object.values(THEME.MODES).includes(savedTheme);
-        const initialTheme = isValidTheme ? savedTheme : THEME.MODES.LIGHT;
+    const savedTheme =
+      localStorage.getItem(THEME.STORAGE_KEY) || THEME.MODES.LIGHT;
+    const isValidTheme = Object.values(THEME.MODES).includes(savedTheme);
+    const initialTheme = isValidTheme ? savedTheme : THEME.MODES.LIGHT;
 
-        setTheme(initialTheme);
-        applyThemeToDOM(initialTheme);
-        setIsInitialized(true);
-      } catch (error) {
-        console.warn("Theme initialization failed:", error);
-        // Fallback to light theme
-        setTheme(THEME.MODES.LIGHT);
-        applyThemeToDOM(THEME.MODES.LIGHT);
-        setIsInitialized(true);
-      }
-    };
-
-    // Small delay to ensure DOM is ready
-    const timer = setTimeout(initializeTheme, 0);
-    return () => clearTimeout(timer);
+    setTheme(initialTheme);
+    applyThemeToDOM(initialTheme);
+    setIsInitialized(true);
   }, []);
 
   // Apply theme to DOM (centralized DOM manipulation)
   const applyThemeToDOM = (newTheme) => {
-    try {
-      const root = document.documentElement;
-      if (newTheme === THEME.MODES.DARK) {
-        root.classList.add(THEME.CSS_CLASS);
-      } else {
-        root.classList.remove(THEME.CSS_CLASS);
-      }
-    } catch (error) {
-      console.warn("Failed to apply theme to DOM:", error);
+    const root = document.documentElement;
+    if (newTheme === THEME.MODES.DARK) {
+      root.classList.add(THEME.CSS_CLASS);
+    } else {
+      root.classList.remove(THEME.CSS_CLASS);
     }
   };
 
@@ -56,11 +38,7 @@ export default function ThemeProvider({ children }) {
     const newTheme =
       theme === THEME.MODES.DARK ? THEME.MODES.LIGHT : THEME.MODES.DARK;
     setTheme(newTheme);
-    try {
-      localStorage.setItem(THEME.STORAGE_KEY, newTheme);
-    } catch (error) {
-      console.warn("Failed to save theme to localStorage:", error);
-    }
+    localStorage.setItem(THEME.STORAGE_KEY, newTheme);
     applyThemeToDOM(newTheme);
   };
 
@@ -71,11 +49,7 @@ export default function ThemeProvider({ children }) {
       return;
     }
     setTheme(newTheme);
-    try {
-      localStorage.setItem(THEME.STORAGE_KEY, newTheme);
-    } catch (error) {
-      console.warn("Failed to save theme to localStorage:", error);
-    }
+    localStorage.setItem(THEME.STORAGE_KEY, newTheme);
     applyThemeToDOM(newTheme);
   };
 
