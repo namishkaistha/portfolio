@@ -12,8 +12,13 @@ export default function HoverCard({ href, title }) {
     //relative --> absolute children will be positioned relative to the containers
     //inline-block --> makes element behave like an inline comment, but with padding
     // px-4, py-2: padding horizontal and vertically
-    <Link href={href} className="group relative inline-block px-4 py-12">
-      <span className="relative z-10 text-2xl font-semibold font-rock-salt">{title}</span>
+    <Link
+      href={href}
+      className="group relative inline-block px-3 sm:px-4 py-6 sm:py-8 lg:py-12"
+    >
+      <span className="relative z-10 text-lg sm:text-xl lg:text-2xl font-semibold font-rock-salt">
+        {title}
+      </span>
 
       <span
         className="
