@@ -26,11 +26,11 @@ body {
 
 /* Only apply CSS custom properties to specific elements, not all elements */
 .bg-background {
-  background-color: var(--background) !important;
+  background-color: var(--background) ;
 }
 
 .text-foreground {
-  color: var(--foreground) !important;
+  color: var(--foreground) ;
 }
 
 /* Font classes */
