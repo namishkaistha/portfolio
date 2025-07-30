@@ -1,13 +1,17 @@
 // src/components/molecules/PodCard.jsx
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaSpotify } from "react-icons/fa";
 import { useTheme } from "../providers/ThemeProvider";
 
 export default function PodCard({ title, description, link }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const { isDark } = useTheme();
+
+  useEffect(() => {
+    console.log("isDark", isDark);
+  }, [isDark]);
 
   return (
     //outer and inner containers for flipping, then title and description for each state

@@ -57,66 +57,43 @@ p {
 }
 
 /* Force explicit colors for cards to ensure they render on Vercel */
-/* Use more specific selectors and !important to override any conflicts */
 .card-white {
-  background-color: white !important;
-  color: #2e5939 !important;
+  background-color: white ;
 }
 
 .card-gray-100 {
-  background-color: #f3f4f6 !important;
-  color: #2e5939 !important;
+  background-color: #f3f4f6 ;
 }
 
 .card-gray-300 {
-  background-color: #d1d5db !important;
-  color: #2e5939 !important;
+  background-color: #d1d5db ;
 }
 
 .card-gray-700 {
-  background-color: #374151 !important;
-  color: #f5f5dc !important;
+  background-color: #374151 ;
 }
 
 .card-gray-800 {
-  background-color: #1f2937 !important;
-  color: #f5f5dc !important;
+  background-color: #1f2937 ;
 }
 
-/* Dark mode overrides - use more specific selectors */
-.dark .card-white,
-html.dark .card-white {
-  background-color: #1f2937 !important;
-  color: #f5f5dc !important;
+/* Dark mode overrides */
+.dark .card-white {
+  background-color: #1f2937 ;
 }
 
-.dark .card-gray-100,
-html.dark .card-gray-100 {
-  background-color: #374151 !important;
-  color: #f5f5dc !important;
+.dark .card-gray-100 {
+  background-color: #374151 ;
 }
 
-.dark .card-gray-300,
-html.dark .card-gray-300 {
-  background-color: #374151 !important;
-  color: #f5f5dc !important;
+.dark .card-gray-300 {
+  background-color: #374151 ;
 }
 
-.dark .card-gray-700,
-html.dark .card-gray-700 {
-  background-color: #374151 !important;
-  color: #f5f5dc !important;
+.dark .card-gray-700 {
+  background-color: #374151 ;
 }
 
-.dark .card-gray-800,
-html.dark .card-gray-800 {
-  background-color: #1f2937 !important;
-  color: #f5f5dc !important;
-}
-
-/* Additional fallback styles for better deployment compatibility */
-[class*="card-"] {
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+.dark .card-gray-800 {
+  background-color: #1f2937 ;
 }
