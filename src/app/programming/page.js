@@ -16,15 +16,14 @@ export default function ProgrammingPage() {
         "TypeScript",
         "FastAPI",
         "Neon Postgres",
-        "Vite",
         "Vercel",
       ],
       description:
         "Volunteer check-in tool for a local food pantry in Evanston",
       accomplishments: [
-        "Built a mobile-first check-in flow — recipients enter their phone, a volunteer long-presses to approve, and each approved person gets one bag per week with an explicit override for edge cases",
-        "Atomic-design React 19 frontend (TypeScript strict, WCAG 2.1 AA, EN/ES i18n) with 110 unit tests, and a TDD FastAPI backend at 97% coverage",
-        "Deployed on Vercel with a Neon serverless Postgres backend; a fire-and-forget warm-up ping on landing masks the double serverless cold-start so volunteers never wait on the first check-in",
+        "Deployed a mobile check-in tool used by 250+ visitors at Evanston's food pantry, cutting per-guest volunteer time by ~80%",
+        "Shipped a React 19 + FastAPI stack on Vercel with a Neon Postgres backend, backed by 158 tests and 97% backend coverage",
+        "Masked double serverless cold-start latency by firing a warm-up ping on landing, so volunteers never wait on the first check-in",
       ],
       category: ["Full Stack", "Project Management"],
       githubUrl: "https://github.com/namishkaistha/checkIn",
@@ -35,9 +34,9 @@ export default function ProgrammingPage() {
       description:
         "Voice-AI mystery shopping system for a restaurant sales pipeline",
       accomplishments: [
-        "Built a CLI that mystery-shops prospective restaurant leads by placing Bland.ai voice calls, extracting structured fields from the transcript with Claude, and scoring each call 0–100 across reachability, order handling, friction, and warmth",
-        "Designed the extracted-fields schema around the question 'why would a customer never order again?' rather than what's easy to parse — the resulting score drives a one-line pitch handle for the SDR",
-        "Resumable pipeline over a 2,355-lead workbook: completed calls are excluded from re-runs, retries are scheduled automatically, and results surface through a Rich terminal UI",
+        "Built a CLI that mystery-shops 2,355 restaurant leads by placing Bland.ai calls and scoring each transcript 0–100 with Claude",
+        "Designed the extracted-fields schema around 'why would a customer never order again?' to drive a one-line pitch handle for the SDR",
+        "Made the pipeline resumable: completed calls are excluded from re-runs, retries are auto-scheduled, and results surface in a Rich terminal UI",
       ],
       category: ["Backend", "ML"],
       githubUrl: "https://github.com/namishkaistha/maple-mystery-shop",
@@ -48,9 +47,9 @@ export default function ProgrammingPage() {
       description:
         "Stateless multi-modal behavioral mock interview tool",
       accomplishments: [
-        "Generates behavioral interview questions personalized from the candidate's resume (parsed in-memory with pdfplumber) and target company / interviewer context pulled via Tavily search",
-        "Claude drives question generation, interviewer follow-ups, and end-of-session evaluation with rubric-scored feedback",
-        "Fully stateless — resume never hits disk, session state lives in memory only for the length of a single interview and is discarded afterward",
+        "Built a stateless FastAPI backend that personalizes behavioral interviews from a resume and Tavily-sourced company context",
+        "Drove question generation, follow-ups, and end-of-session evaluation using the Claude API",
+        "Kept the tool fully stateless: resumes are parsed in-memory with pdfplumber and never written to disk",
       ],
       category: ["Backend", "ML"],
       githubUrl: "https://github.com/namishkaistha/mock_interview",
@@ -59,11 +58,10 @@ export default function ProgrammingPage() {
       title: "Perception",
       tech: ["Python", "NLP", "Sentiment Analysis"],
       description:
-        "Personal project tracking how other people's perception of me shifts across contexts and over time",
+        "Tracking how other people's perception of me shifts across contexts and over time",
       accomplishments: [
-        "Extracts latent perception dimensions — risk orientation, spontaneity, ambition, creativity, reliability — from free-text descriptions solicited from friends across hometown, college, and family cohorts",
-        "Plots each response as a colored dot on per-dimension number lines, cohort by cohort, to surface variance patterns and drift over time",
-        "Leans on the high adjective density and semantic consistency of the responses to reliably extract traits despite a modest sample size",
+        "Built an NLP pipeline extracting 5 latent perception dimensions (risk, spontaneity, ambition, creativity, reliability) from free-text friend descriptions",
+        "Plotted responses on per-dimension number lines by life-stage cohort to surface variance patterns and drift over time",
       ],
       category: ["ML"],
       githubUrl: "https://github.com/namishkaistha/perception",
