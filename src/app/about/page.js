@@ -7,25 +7,26 @@ import profilePic from "../profile/Namish_Photo.jpg";
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background text-foreground flex flex-col items-center gap-8 p-8">
-      <h2 className="text-3xl p-8 dark:text-white">Hello!</h2>
+      <div className="flex flex-col items-center gap-2 p-8">
+        <h2 className="text-3xl dark:text-white">Hi, I&apos;m Namish</h2>
+        <a
+          href="https://www.linkedin.com/in/namishkaistha"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm underline text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200"
+        >
+          linkedin.com/in/namishkaistha
+        </a>
+      </div>
       <IntroCard
         photo={profilePic}
         description={
           <div className="text-center md:text-left">
             <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-              I’m Namish, a Computer Science and Economics student passionate
-              about empowering people and businesses to tell their stories. I do
-              this by creating content and working on ideas that democratize
+              I’m a Computer Science and Economics student passionate about
+              empowering people and businesses to tell their stories. I do this
+              by creating content and working on ideas that democratize
               technology for businesses. You can find my work on{" "}
-              <a
-                href="https://www.linkedin.com/in/namishkaistha"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200"
-              >
-                LinkedIn
-              </a>
-              ,{" "}
               <a
                 href="https://github.com/namishkaistha"
                 target="_blank"
