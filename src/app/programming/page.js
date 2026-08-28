@@ -29,19 +29,6 @@ export default function ProgrammingPage() {
       githubUrl: "https://github.com/namishkaistha/checkIn",
     },
     {
-      title: "Maple Mystery Shop",
-      tech: ["Python", "Bland.ai", "Claude API", "SQLite"],
-      description:
-        "Voice-AI mystery shopping system for a restaurant sales pipeline",
-      accomplishments: [
-        "Built a CLI that mystery-shops 2,355 restaurant leads by placing Bland.ai calls and scoring each transcript 0–100 with Claude",
-        "Designed the extracted-fields schema around 'why would a customer never order again?' to drive a one-line pitch handle for the SDR",
-        "Made the pipeline resumable: completed calls are excluded from re-runs, retries are auto-scheduled, and results surface in a Rich terminal UI",
-      ],
-      category: ["Backend", "ML"],
-      githubUrl: "https://github.com/namishkaistha/maple-mystery-shop",
-    },
-    {
       title: "AI Mock Interview",
       tech: ["FastAPI", "Claude API", "pdfplumber", "Tavily"],
       description:
