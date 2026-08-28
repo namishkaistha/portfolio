@@ -34,6 +34,15 @@ export default function AboutPage() {
               >
                 GitHub
               </a>
+              ,{" "}
+              <a
+                href="https://substack.com/@namishkaistha"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200"
+              >
+                Substack
+              </a>
               , or you can check out my {""}
               <a
                 href="/Kaistha_Namish_Resume.pdf"
