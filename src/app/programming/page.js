@@ -10,6 +10,65 @@ export default function ProgrammingPage() {
 
   const projects = [
     {
+      title: "Pantry Check-In",
+      tech: [
+        "React 19",
+        "TypeScript",
+        "FastAPI",
+        "Neon Postgres",
+        "Vite",
+        "Vercel",
+      ],
+      description:
+        "Volunteer check-in tool for a local food pantry in Evanston",
+      accomplishments: [
+        "Built a mobile-first check-in flow — recipients enter their phone, a volunteer long-presses to approve, and each approved person gets one bag per week with an explicit override for edge cases",
+        "Atomic-design React 19 frontend (TypeScript strict, WCAG 2.1 AA, EN/ES i18n) with 110 unit tests, and a TDD FastAPI backend at 97% coverage",
+        "Deployed on Vercel with a Neon serverless Postgres backend; a fire-and-forget warm-up ping on landing masks the double serverless cold-start so volunteers never wait on the first check-in",
+      ],
+      category: ["Full Stack", "Project Management"],
+      githubUrl: "https://github.com/namishkaistha/checkIn",
+    },
+    {
+      title: "Maple Mystery Shop",
+      tech: ["Python", "Bland.ai", "Claude API", "SQLite"],
+      description:
+        "Voice-AI mystery shopping system for a restaurant sales pipeline",
+      accomplishments: [
+        "Built a CLI that mystery-shops prospective restaurant leads by placing Bland.ai voice calls, extracting structured fields from the transcript with Claude, and scoring each call 0–100 across reachability, order handling, friction, and warmth",
+        "Designed the extracted-fields schema around the question 'why would a customer never order again?' rather than what's easy to parse — the resulting score drives a one-line pitch handle for the SDR",
+        "Resumable pipeline over a 2,355-lead workbook: completed calls are excluded from re-runs, retries are scheduled automatically, and results surface through a Rich terminal UI",
+      ],
+      category: ["Backend", "ML"],
+      githubUrl: "https://github.com/namishkaistha/maple-mystery-shop",
+    },
+    {
+      title: "AI Mock Interview",
+      tech: ["FastAPI", "Claude API", "pdfplumber", "Tavily"],
+      description:
+        "Stateless multi-modal behavioral mock interview tool",
+      accomplishments: [
+        "Generates behavioral interview questions personalized from the candidate's resume (parsed in-memory with pdfplumber) and target company / interviewer context pulled via Tavily search",
+        "Claude drives question generation, interviewer follow-ups, and end-of-session evaluation with rubric-scored feedback",
+        "Fully stateless — resume never hits disk, session state lives in memory only for the length of a single interview and is discarded afterward",
+      ],
+      category: ["Backend", "ML"],
+      githubUrl: "https://github.com/namishkaistha/mock_interview",
+    },
+    {
+      title: "Perception",
+      tech: ["Python", "NLP", "Sentiment Analysis"],
+      description:
+        "Personal project tracking how other people's perception of me shifts across contexts and over time",
+      accomplishments: [
+        "Extracts latent perception dimensions — risk orientation, spontaneity, ambition, creativity, reliability — from free-text descriptions solicited from friends across hometown, college, and family cohorts",
+        "Plots each response as a colored dot on per-dimension number lines, cohort by cohort, to surface variance patterns and drift over time",
+        "Leans on the high adjective density and semantic consistency of the responses to reliably extract traits despite a modest sample size",
+      ],
+      category: ["ML"],
+      githubUrl: "https://github.com/namishkaistha/perception",
+    },
+    {
       title: "Catan",
       tech: ["Java"],
       description: "Virtual version of the board game Catan",
